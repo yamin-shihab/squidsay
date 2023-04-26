@@ -5,7 +5,7 @@ CFLAGS := -std=c99 -pedantic -Wall -Wextra -Ofast -o build/squidsay
 all: build
 
 build:
-	mkdir -p build && $(CC) src/squidsay.c $(CFLAGS)
+	mkdir -p build && $(CC) squidsay.c $(CFLAGS)
 
 install: build
 	cp build/squidsay /usr/local/bin
